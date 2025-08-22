@@ -57,7 +57,7 @@ Different algorithms capture motor-control differences to varying degrees.
 ### Validation Metrics
 ![Silhouette](figures/silhouette.png)
 
-Silhouette & ARI indicate reasonable separation between Ill and Control groups.  
+Silhouette indicate reasonable separation between Ill and Control groups.  
 
 ---
 
@@ -65,12 +65,11 @@ Silhouette & ARI indicate reasonable separation between Ill and Control groups.
 
 | Method        | Avg. Silhouette ↑ | Davies–Bouldin ↓ | Dunn ↑ | Adjusted Rand Index ↑ |
 |---------------|------------------|------------------|--------|------------------------|
-| **K-Means**   | *0.xx*           | *x.xx*           | *x.xx* | *0.xx*                 |
-| **DBSCAN**    | *0.xx*           | *x.xx*           | *x.xx* | *0.xx*                 |
-| **AHC (Ward)**| *0.xx*           | *x.xx*           | *x.xx* | *0.xx*                 |
+| **K-Means**   | *0.640*           | *0.996*           | *0.288* | *0.464*                 |
+| **DBSCAN**    | *0.624*           | *1.063*           | *0.393* | *0.464*                 |
+| **AHC (Ward)**| *0.740*           | *0.891*           | *0.421* | *0.474*                 |
 
 **↑ higher is better, ↓ lower is better**  
-*Fill in with your computed values (from silhouette, `intCriteria`, ARI output in Final_Project.R)*  
 
 ---
 ## 🚀 Quick Start
