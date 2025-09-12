@@ -5,7 +5,21 @@ By transforming raw `.svc` stylus signals into interpretable features, we explor
 
 ---
 
-## ⚙️ Workflow
+## Real-World Applications
+
+This spiral motion analysis project goes beyond data science practice — it connects directly to healthcare and digital diagnostics.
+
+In clinical settings, neurologists often ask patients to draw spirals as part of Parkinson’s assessments. By digitizing and analyzing these drawings, we can move from subjective visual judgment to quantitative metrics. Features like speed variability, pen pressure fluctuations, and jaggedness of curves can act as biomarkers for motor instability. This makes screening more consistent and scalable, especially in early detection.
+
+For remote health monitoring, stylus-enabled tablets or smartphones could capture spirals at home, giving doctors continuous insights into disease progression without requiring frequent hospital visits. This would also allow clinical trials to collect richer data with less patient burden.
+
+From a data science and research perspective, the pipeline demonstrates how handwriting and motion data can be transformed into meaningful features, clustered, and validated against known groups. The same methodology could be extended to other motor disorders (e.g., essential tremor, multiple sclerosis) or even to rehabilitation monitoring, where improvements in handwriting can signal therapy effectiveness.
+
+In short, this project shows how a simple drawing task can be turned into a non-invasive, digital biomarker pipeline, bridging the gap between raw pen signals and actionable healthcare insights.
+
+---
+
+## Workflow
 
 1. **Data Preprocessing**
    - Parse `.svc` files → `x, y, timestamp, pen_state, azimuth, altitude, pressure`  
@@ -37,7 +51,7 @@ By transforming raw `.svc` stylus signals into interpretable features, we explor
    - t-SNE visualization  
 
 ---
-## 📊 Visual Highlights
+## Visual Highlights
 
 ### Spiral & Motion Plots
 ![Spiral Comparison](figures/spirals.png)
@@ -61,7 +75,7 @@ Silhouette indicate reasonable separation between Ill and Control groups.
 
 ---
 
-## 📌 Results at a Glance
+## Results at a Glance
 
 | Method        | Avg. Silhouette ↑ | Davies–Bouldin ↓ | Dunn ↑ | Adjusted Rand Index ↑ |
 |---------------|------------------|------------------|--------|------------------------|
@@ -72,7 +86,7 @@ Silhouette indicate reasonable separation between Ill and Control groups.
 **↑ higher is better, ↓ lower is better**  
 
 ---
-## 🚀 Quick Start
+## Quick Start
 
 1. Install dependencies in R:
 
@@ -97,7 +111,7 @@ Silhouette indicate reasonable separation between Ill and Control groups.
 
 ---
 
-## 🧠 Key Insights
+## Key Insights
 
 - Parkinson’s spirals are **irregular and jagged**, compared to smoother control spirals.  
 - Pressure and tilt signals show **inconsistency** in patients, suggesting motor instability.  
@@ -106,7 +120,7 @@ Silhouette indicate reasonable separation between Ill and Control groups.
 
 ---
 
-## 📈 Applications
+## Applications
 
 - Non-invasive screening for Parkinson’s symptoms via handwriting  
 - Feature engineering pipeline for digital pen data  
